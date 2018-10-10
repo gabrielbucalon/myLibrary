@@ -11,12 +11,16 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { LoginComponent } from './auth/login/login.component';
+import { LegalAdviceComponent } from './auth/legal-advice/legal-advice.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    SidebarComponent
+    SidebarComponent,
+    LoginComponent,
+    LegalAdviceComponent,
   ],
   imports: [
     BrowserModule,
