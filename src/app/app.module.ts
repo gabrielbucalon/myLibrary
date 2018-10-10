@@ -5,7 +5,6 @@ import {NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -13,6 +12,12 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { LoginComponent } from './auth/login/login.component';
 import { LegalAdviceComponent } from './auth/legal-advice/legal-advice.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
+import { HeaderComponent } from './shared/header/header.component';
+
+import { RouterModule } from '@angular/router';
+import { ROUTES } from './app.routes';
+
+
 
 @NgModule({
   declarations: [
@@ -22,6 +27,7 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
     LoginComponent,
     LegalAdviceComponent,
     DashboardComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,12 +37,8 @@ import { DashboardComponent } from './modules/dashboard/dashboard.component';
     MatCheckboxModule,
     MatSidenavModule,
     MatToolbarModule,
-    RouterModule.forRoot([
-      {
-        path: 'dashboard',
-        component: DashboardComponent
-      },
-    ])
+    RouterModule.forRoot(ROUTES)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
