@@ -1,0 +1,49 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-toolbar>
+      <div class="example-sidenav-content">
+        <button mat-mini-fab class="primary" color="primary" type="button" mat-button (click)="drawer.toggle()">
+          <i class="material-icons">
+            menu
+          </i>
+        </button>
+      </div>
+    </mat-toolbar>
+
+
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="../../../assets/VAGA-DE-PROGRAMADOR-280x280.png" alt="DEV Front-End" class="rounded-circle">
+        </div>
+      </div>
+      <div class="date-user">
+        <div class="row d-flex justify-content-center">
+          <span>Dev Front</span>
+        </div>
+        <div class="row row d-flex justify-content-center">
+          <span>
+            <i class="material-icons">location_on</i>Hortolândia, SP</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <button mat-button>
+            <i class="material-icons">
+              dashboard
+            </i>
+            <span>Dashboard</span>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <button mat-button>
+            <i class="material-icons">
+              import_contacts
+            </i>
+            <span>Forms</span>
+          </button>
+        </div>
+      </div>
+    </mat-drawer>
+</mat-drawer-container>
