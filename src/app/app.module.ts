@@ -13,6 +13,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { LegalAdviceComponent } from './auth/legal-advice/legal-advice.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { HeaderComponent } from './shared/header/header.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
@@ -37,6 +38,7 @@ import { ROUTES } from './app.routes';
     MatCheckboxModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatFormFieldModule,
     RouterModule.forRoot(ROUTES)
 
   ],
