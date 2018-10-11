@@ -1,35 +1,11 @@
-body{
-  overflow-x: hidden;
-  width: 100%;
-}
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+// .primary {
+//   background: #29323c;
+// }
 
-.afu-attach-pin {
-  font-size: 12px;
-}
-
-#attachPin {
-  width: auto !important;
-  margin-left: -5px !important;
-}
-
-.required {
-  padding-left: 4px;
-  color: #ff0000;
-}
-
-.afu-upload-btn {
-  display: none !important;
-}
-
-.afu-constraints-info {
-  display: none !important;
-}
-
-.toast-container .toast {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  list-style-type: none;
-}
-
-
+// .mat-mini-fab:not() {
+//   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+//     0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+//   background: #29323c;
+//   margin-left: 10px;
+// }

@@ -34,12 +34,5 @@ $four-k: 2560px;
   justify-content: center;
 }
 
-@media print {
-  .doNotPrint {
-    display: none!important
-  }
-  @page {
-    size: landscape;
-  }
-}
+
 
