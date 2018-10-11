@@ -1,0 +1,45 @@
+
+
+// colors
+$color-default: #f8d117;
+$color-gray4: #767a85;
+$color-white: #fff;
+$color-white2: #f5f5f5;
+$color-black: #191919;
+$color-gray7: #1d2128;
+
+//responsive
+$mobile-s: 320px;
+$mobile-m: 375px;
+$mobile-l: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptop-l: 1440px;
+$four-k: 2560px;
+
+
+// extends
+%button-default{
+  color: $color-default;
+  background-color: $color-black;
+}
+
+%space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%center {
+  display: flex;
+  justify-content: center;
+}
+
+@media print {
+  .doNotPrint {
+    display: none!important
+  }
+  @page {
+    size: landscape;
+  }
+}
+
